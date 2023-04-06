@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.LinkedHashMap;
 
 public class LangFileSplitter {
     private static final String KDX_LANGUAGE_FILE = "i18n.data";
@@ -26,7 +27,7 @@ public class LangFileSplitter {
         objectMapper.configure(SerializationFeature.WRAP_ROOT_VALUE, false);
 
         for (TranslationsEnum translationsEnum : TranslationsEnum.values()) {
-            TranslationTarget translationTarget = new TranslationTarget();
+            LinkedHashMap<String, String> translationTargetMap = new LinkedHashMap<String, String>();
             for (Translation translation : translations) {
                 String currentTranslation;
                 switch (translationsEnum) {
@@ -39,9 +40,9 @@ public class LangFileSplitter {
                     case ZH_HANS -> currentTranslation = translation.getZh_HANS();
                     default -> currentTranslation = "";
                 }
-                translationTarget.add(translation.getEn(), currentTranslation);
+                translationTargetMap.put(translation.getEn(), currentTranslation);
             }
-            objectMapper.writeValue(new File("kdx_" + translationsEnum.getTranslation() + ".json"), translationTarget);
+            objectMapper.writeValue(new File("kdx_" + translationsEnum.getTranslation() + ".json"), translationTargetMap);
         }
     }
 }
