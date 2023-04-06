@@ -53,22 +53,22 @@ public class TranslationConverterApplication implements ApplicationRunner {
         }
 
         // User wants to see the help content
-        if (args.containsOption(Options.SHOW_HELP.getOption())) {
+        if (args.containsOption(OptionsEnum.SHOW_HELP.getOption())) {
             Help.showHelp();
             return;
         }
 
         // Set some defaults if necessary
-        if (!args.containsOption(Options.DEFAULT_LANGUAGE.getOption())) {
-            defaultLanguage = Options.DEFAULT_LANGUAGE.getDefaultValue();
+        if (!args.containsOption(OptionsEnum.DEFAULT_LANGUAGE.getOption())) {
+            defaultLanguage = OptionsEnum.DEFAULT_LANGUAGE.getDefaultValue();
         }
-        if (!args.containsOption(Options.TRANSLATION_FILE_FOLDER.getOption())) {
-            translationFileFolder = Options.TRANSLATION_FILE_FOLDER.getDefaultValue();
+        if (!args.containsOption(OptionsEnum.TRANSLATION_FILE_FOLDER.getOption())) {
+            translationFileFolder = OptionsEnum.TRANSLATION_FILE_FOLDER.getDefaultValue();
         }
 
         // Get given options
         for (String currentOption : args.getOptionNames()) {
-            Options currentOptionEnum = Options.getOptionByName(currentOption);
+            OptionsEnum currentOptionEnum = OptionsEnum.getOptionByName(currentOption);
             switch (Objects.requireNonNull(currentOptionEnum)) {
                 case MERGE_FILES -> doMerge = true;
                 case SPLIT_FILES -> doSplit = true;
@@ -96,7 +96,7 @@ public class TranslationConverterApplication implements ApplicationRunner {
 
         // Now just do it!
         if (doSplit) {
-            LangFileSplitter langFileSplitter = new LangFileSplitter();
+            LangFileSplitter langFileSplitter = new LangFileSplitter(translationFileFolder);
             langFileSplitter.doSplit();
         } else if (doMerge) {
             LangFileMerger langFileMerger = new LangFileMerger();

@@ -10,7 +10,7 @@ public class Help {
                  - split a given KDX language file into separate files or
                  - merge different language files into a single file
 
-                Usage: java -jar translationconverter.jar <options>
+                Usage: java -jar translationconverter.jar <optionsEnum>
 
                 Options:
                 --help

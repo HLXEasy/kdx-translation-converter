@@ -1,6 +1,6 @@
 package org.kaspa.kdx.translationconverter;
 
-public enum Options {
+public enum OptionsEnum {
     DEFAULT_LANGUAGE("defaultLang", "en"),
     TRANSLATION_FILE_FOLDER("folder", "/tmp/kdx"),
     SPLIT_FILES("split", ""),
@@ -10,7 +10,7 @@ public enum Options {
     private final String option;
     private final String defaultValue;
 
-    Options(String option, String defaultValue) {
+    OptionsEnum(String option, String defaultValue) {
         this.option = option;
         this.defaultValue = defaultValue;
     }
@@ -19,10 +19,10 @@ public enum Options {
         return option;
     }
 
-    public static Options getOptionByName(String name) {
-        for (Options options : values()) {
-            if (options.option.equals(name)) {
-                return options;
+    public static OptionsEnum getOptionByName(String name) {
+        for (OptionsEnum optionsEnum : values()) {
+            if (optionsEnum.option.equals(name)) {
+                return optionsEnum;
             }
         }
         return null;
