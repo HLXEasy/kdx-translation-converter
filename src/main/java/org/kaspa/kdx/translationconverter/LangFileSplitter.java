@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 public class LangFileSplitter {
-    private static final String KDX_LANGUAGE_FILE = "i18n.data.bak";
+    private static final String KDX_LANGUAGE_FILE = "i18n.data";
     private final String translationFileFolder;
 
     public LangFileSplitter(String translationFileFolder) {
@@ -16,7 +16,6 @@ public class LangFileSplitter {
     }
 
     public void doSplit() throws IOException {
-        //create ObjectMapper instance
         ObjectMapper objectMapper = new ObjectMapper();
 
         Translation[] translations = objectMapper.readValue(new File(translationFileFolder + File.separator + KDX_LANGUAGE_FILE), Translation[].class);
