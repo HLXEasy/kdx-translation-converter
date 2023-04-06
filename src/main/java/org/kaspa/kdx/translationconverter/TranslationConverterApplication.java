@@ -99,7 +99,7 @@ public class TranslationConverterApplication implements ApplicationRunner {
             LangFileSplitter langFileSplitter = new LangFileSplitter(translationFileFolder);
             langFileSplitter.doSplit();
         } else if (doMerge) {
-            LangFileMerger langFileMerger = new LangFileMerger();
+            LangFileMerger langFileMerger = new LangFileMerger(translationFileFolder);
             langFileMerger.doMerge();
         } else {
             System.out.println("\nNo valid combination of options given");
