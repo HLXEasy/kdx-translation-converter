@@ -70,11 +70,12 @@ public class Translation {
     public String toString() {
         return "\nTranslation {" +
             "\n    en=" + en +
-            "\n    ja=" + ja +
-            "\n    zh_HANS=" + zh_HANS +
-            "\n    ko=" + ko +
-            "\n    it=" + it +
+            "\n    de=" + de +
             "\n    id=" + id +
+            "\n    it=" + it +
+            "\n    ja=" + ja +
+            "\n    ko=" + ko +
+            "\n    zh_HANS=" + zh_HANS +
             "\n}";
     }
 }
