@@ -3,12 +3,14 @@ package org.kaspa.kdx.translationconverter;
 public class Translation {
 
     private String en = "";
+    private String cmn = "";
     private String de = "";
-    private String ja = "";
-    private String zh_HANS = "";
-    private String ko = "";
-    private String it = "";
+    private String fr = "";
     private String id = "";
+    private String it = "";
+    private String ja = "";
+    private String ko = "";
+    private String zh = "";
 
     public String getEn() {
         return en;
@@ -34,12 +36,12 @@ public class Translation {
         this.ja = ja;
     }
 
-    public String getZh_HANS() {
-        return zh_HANS;
+    public String getZh() {
+        return zh;
     }
 
-    public void setZh_HANS(String zh_HANS) {
-        this.zh_HANS = zh_HANS;
+    public void setZh(String zh_HANS) {
+        this.zh = zh_HANS;
     }
 
     public String getKo() {
@@ -70,12 +72,30 @@ public class Translation {
     public String toString() {
         return "\nTranslation {" +
             "\n    en=" + en +
+            "\n    cmn=" + cmn +
             "\n    de=" + de +
+            "\n    fr=" + fr +
             "\n    id=" + id +
             "\n    it=" + it +
             "\n    ja=" + ja +
             "\n    ko=" + ko +
-            "\n    zh_HANS=" + zh_HANS +
+            "\n    zh=" + zh +
             "\n}";
+    }
+
+    public void setFr(String fr) {
+        this.fr = fr;
+    }
+
+    public void setCmn(String cmn) {
+        this.cmn = cmn;
+    }
+
+    public String getFr() {
+        return fr;
+    }
+
+    public String getCmn() {
+        return cmn;
     }
 }

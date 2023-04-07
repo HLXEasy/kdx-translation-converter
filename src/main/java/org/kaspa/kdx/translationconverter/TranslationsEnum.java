@@ -2,12 +2,14 @@ package org.kaspa.kdx.translationconverter;
 
 public enum TranslationsEnum {
     EN("en"),
+    CMN("cmn"),
     DE("de"),
-    JA("ja"),
-    ZH_HANS("zh_HANS"),
-    KO("ko"),
-    IT("it"),
+    FR("fr"),
     ID("id"),
+    IT("it"),
+    JA("ja"),
+    KO("ko"),
+    ZH("zh_HANS"),
     ;
 
     private final String translation;
