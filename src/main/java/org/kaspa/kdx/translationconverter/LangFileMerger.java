@@ -38,13 +38,14 @@ public class LangFileMerger {
                 if (filename.equals("kdx-wallet_kdx_enjson_1_en.json")) {
                     System.out.println("Found master language file " + filename);
                     HashMap<String, String> map = objectMapper.readValue(new File(translationFileFolder + File.separator + filename), typeRef);
-                    System.out.println(map);
+//                    System.out.println(map);
                     for (Map.Entry<String, String> translationEntry : map.entrySet()) {
                         Translation translation = new Translation();
                         translation.setEn(translationEntry.getKey());
                         addTranslationEntry(translation);
                     }
-                    System.out.println(Arrays.toString(translations));
+//                    System.out.println(Arrays.toString(translations));
+                    break;
                 }
             }
             System.out.println("\n===================================\n");
@@ -54,7 +55,7 @@ public class LangFileMerger {
                     if (filename.endsWith("for_use_kdx-wallet_kdx_enjson_1_" + translationsEnum.getTranslation() + ".json")) {
                         System.out.println("Reading file " + filename);
                         HashMap<String, String> map = objectMapper.readValue(new File(translationFileFolder + File.separator + filename), typeRef);
-                        System.out.println(map);
+//                        System.out.println(map);
                         addTranslation(map, translationsEnum);
 
 //                    } else {
