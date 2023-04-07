@@ -72,6 +72,8 @@ public class LangFileMerger {
 
         objectMapper.configure(SerializationFeature.INDENT_OUTPUT, true);
         objectMapper.configure(SerializationFeature.WRAP_ROOT_VALUE, false);
+
+        objectMapper.writeValue(new File("kdx_translations.json"), translations);
     }
 
     private void addTranslation(HashMap<String, String> map, TranslationsEnum translationsEnum) {
