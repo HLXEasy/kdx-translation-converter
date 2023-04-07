@@ -11,6 +11,7 @@ public class Translation {
     private String ja = "";
     private String ko = "";
     private String zh = "";
+    private String zh_HANS = "";
 
     public String getEn() {
         return en;
@@ -80,6 +81,7 @@ public class Translation {
             "\n    ja=" + ja +
             "\n    ko=" + ko +
             "\n    zh=" + zh +
+            "\n    zh_HANS=" + zh_HANS +
             "\n}";
     }
 
@@ -97,5 +99,13 @@ public class Translation {
 
     public String getCmn() {
         return cmn;
+    }
+
+    public String getZh_HANS() {
+        return zh_HANS;
+    }
+
+    public void setZh_HANS(String zh_HANS) {
+        this.zh_HANS = zh_HANS;
     }
 }

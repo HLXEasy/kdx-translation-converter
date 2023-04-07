@@ -40,11 +40,12 @@ public class LangFileSplitter {
                     case JA -> currentTranslation = translation.getJa();
                     case KO -> currentTranslation = translation.getKo();
                     case ZH -> currentTranslation = translation.getZh();
+                    case ZH_HANS -> currentTranslation = translation.getZh_HANS();
                     default -> currentTranslation = "";
                 }
                 translationTargetMap.put(translation.getEn(), currentTranslation);
             }
-            objectMapper.writeValue(new File("kdx_" + translationsEnum.getTranslation() + ".json"), translationTargetMap);
+            objectMapper.writeValue(new File(translationFileFolder + File.separator + "kdx_" + translationsEnum.getTranslation() + ".json"), translationTargetMap);
         }
     }
 }

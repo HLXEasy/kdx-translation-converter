@@ -10,6 +10,7 @@ public enum TranslationsEnum {
     JA("ja"),
     KO("ko"),
     ZH("zh"),
+    ZH_HANS("zh_HANS"),
     ;
 
     private final String translation;

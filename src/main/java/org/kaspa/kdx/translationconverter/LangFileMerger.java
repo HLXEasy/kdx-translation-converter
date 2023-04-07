@@ -92,6 +92,7 @@ public class LangFileMerger {
                         case JA -> translations[i].setJa(entry.getValue());
                         case KO -> translations[i].setKo(entry.getValue());
                         case ZH -> translations[i].setZh(entry.getValue());
+                        case ZH_HANS -> translations[i].setZh_HANS(entry.getValue());
                     }
                 }
             }
