@@ -3,7 +3,6 @@ package org.kaspa.kdx.translationconverter;
 public class Translation {
 
     private String en = "";
-    private String cmn = "";
     private String de = "";
     private String fr = "";
     private String id = "";
@@ -73,7 +72,6 @@ public class Translation {
     public String toString() {
         return "\nTranslation {" +
             "\n    en=" + en +
-            "\n    cmn=" + cmn +
             "\n    de=" + de +
             "\n    fr=" + fr +
             "\n    id=" + id +
@@ -89,16 +87,8 @@ public class Translation {
         this.fr = fr;
     }
 
-    public void setCmn(String cmn) {
-        this.cmn = cmn;
-    }
-
     public String getFr() {
         return fr;
-    }
-
-    public String getCmn() {
-        return cmn;
     }
 
     public String getZh_HANS() {
