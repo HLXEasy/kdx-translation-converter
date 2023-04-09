@@ -1,7 +1,6 @@
 package org.kaspa.kdx.translationconverter;
 
 public enum OptionsEnum {
-    DEFAULT_LANGUAGE("defaultLang", "en"),
     TRANSLATION_FILE_FOLDER("folder", "/tmp/kdx"),
     SPLIT_FILES("split", ""),
     MERGE_FILES("merge", ""),

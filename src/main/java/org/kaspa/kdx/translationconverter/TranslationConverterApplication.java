@@ -16,9 +16,6 @@ public class TranslationConverterApplication implements ApplicationRunner {
 
     private static final Logger LOG = LoggerFactory.getLogger(TranslationConverterApplication.class);
 
-    @Value("defaultLang")
-    private String defaultLanguage = "en";
-
     @Value("folder")
     private String translationFileFolder = "";
 
@@ -58,10 +55,6 @@ public class TranslationConverterApplication implements ApplicationRunner {
             return;
         }
 
-        // Set some defaults if necessary
-        if (!args.containsOption(OptionsEnum.DEFAULT_LANGUAGE.getOption())) {
-            defaultLanguage = OptionsEnum.DEFAULT_LANGUAGE.getDefaultValue();
-        }
         if (!args.containsOption(OptionsEnum.TRANSLATION_FILE_FOLDER.getOption())) {
             translationFileFolder = OptionsEnum.TRANSLATION_FILE_FOLDER.getDefaultValue();
         }
@@ -72,7 +65,6 @@ public class TranslationConverterApplication implements ApplicationRunner {
             switch (Objects.requireNonNull(currentOptionEnum)) {
                 case MERGE_FILES -> doMerge = true;
                 case SPLIT_FILES -> doSplit = true;
-                case DEFAULT_LANGUAGE -> defaultLanguage = args.getOptionValues(currentOption).get(0);
                 case TRANSLATION_FILE_FOLDER -> translationFileFolder = args.getOptionValues(currentOption).get(0);
                 default -> {
                     Help.showHelp();
@@ -89,8 +81,7 @@ public class TranslationConverterApplication implements ApplicationRunner {
         }
 
         // Show a summary before starting the main work
-        System.out.println("\nDefault language:    " + defaultLanguage +
-            "\nPerformed operation: " + (doMerge ? "merge" : doSplit ? "split" : "unknown") +
+        System.out.println("\nPerformed operation: " + (doMerge ? "merge" : doSplit ? "split" : "unknown") +
             "\nUsed folder:         " + translationFileFolder +
             "\n");
 

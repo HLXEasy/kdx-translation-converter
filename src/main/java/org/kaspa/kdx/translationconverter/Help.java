@@ -15,8 +15,6 @@ public class Help {
                 Options:
                 --help
                   .. Show this help text
-                --defaultLang=<language>
-                  .. Define a different language than 'en' as default
                 --folder=<path>
                   .. Path to folder where language files are located
                 --merge
@@ -25,10 +23,6 @@ public class Help {
                 --split
                   .. Split KDX i18n.data language file on given folder into
                      separate json files for each determined language
-                --
-                  ..
-                --
-                  ..
             """);
 //         |<- Position 0                                                 Position 78 ->|
     }
