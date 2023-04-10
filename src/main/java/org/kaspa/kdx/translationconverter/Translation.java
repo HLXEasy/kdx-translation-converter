@@ -9,6 +9,7 @@ public class Translation {
     private String it = "";
     private String ja = "";
     private String ko = "";
+    private String pt_BR = "";
     private String zh = "";
     private String zh_HANS = "";
 
@@ -28,28 +29,20 @@ public class Translation {
         this.de = de;
     }
 
-    public String getJa() {
-        return ja;
+    public String getFr() {
+        return fr;
     }
 
-    public void setJa(String ja) {
-        this.ja = ja;
+    public void setFr(String fr) {
+        this.fr = fr;
     }
 
-    public String getZh() {
-        return zh;
+    public String getId() {
+        return id;
     }
 
-    public void setZh(String zh_HANS) {
-        this.zh = zh_HANS;
-    }
-
-    public String getKo() {
-        return ko;
-    }
-
-    public void setKo(String ko) {
-        this.ko = ko;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getIt() {
@@ -60,12 +53,44 @@ public class Translation {
         this.it = it;
     }
 
-    public String getId() {
-        return id;
+    public String getJa() {
+        return ja;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setJa(String ja) {
+        this.ja = ja;
+    }
+
+    public String getKo() {
+        return ko;
+    }
+
+    public void setKo(String ko) {
+        this.ko = ko;
+    }
+
+    public String getPt_BR() {
+        return pt_BR;
+    }
+
+    public void setPt_BR(String pt_BR) {
+        this.pt_BR = pt_BR;
+    }
+
+    public String getZh() {
+        return zh;
+    }
+
+    public void setZh(String zh_HANS) {
+        this.zh = zh_HANS;
+    }
+
+    public String getZh_HANS() {
+        return zh_HANS;
+    }
+
+    public void setZh_HANS(String zh_HANS) {
+        this.zh_HANS = zh_HANS;
     }
 
     @Override
@@ -78,24 +103,9 @@ public class Translation {
             "\n    it=" + it +
             "\n    ja=" + ja +
             "\n    ko=" + ko +
+            "\n    pt_BR=" + pt_BR +
             "\n    zh=" + zh +
             "\n    zh_HANS=" + zh_HANS +
             "\n}";
-    }
-
-    public void setFr(String fr) {
-        this.fr = fr;
-    }
-
-    public String getFr() {
-        return fr;
-    }
-
-    public String getZh_HANS() {
-        return zh_HANS;
-    }
-
-    public void setZh_HANS(String zh_HANS) {
-        this.zh_HANS = zh_HANS;
     }
 }
