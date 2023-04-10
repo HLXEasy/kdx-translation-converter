@@ -8,6 +8,7 @@ public enum TranslationsEnum {
     IT("it"),
     JA("ja"),
     KO("ko"),
+    PT_BR("pt_BR"),
     ZH("zh"),
     ZH_HANS("zh_HANS"),
     ;
