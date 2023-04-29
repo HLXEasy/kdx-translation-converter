@@ -35,7 +35,7 @@ public class LangFileMerger {
         if (directoryListing != null) {
             for (File child : directoryListing) {
                 String filename = child.getName();
-                if (filename.equals("kdx-wallet_kdx_enjson_1_en.json")) {
+                if (filename.equals("kdx_enjson_1_en.json")) {
                     System.out.println("Found master language file " + filename);
                     HashMap<String, String> map = objectMapper.readValue(new File(translationFileFolder + File.separator + filename), typeRef);
 //                    System.out.println(map);
@@ -52,7 +52,7 @@ public class LangFileMerger {
             for (File child : directoryListing) {
                 String filename = child.getName();
                 for (TranslationsEnum translationsEnum : TranslationsEnum.values()) {
-                    if (filename.endsWith("for_use_kdx-wallet_kdx_enjson_1_" + translationsEnum.getTranslation() + ".json")) {
+                    if (filename.endsWith("kdx_enjson_1_" + translationsEnum.getTranslation() + ".json")) {
                         System.out.println("Reading file " + filename);
                         HashMap<String, String> map = objectMapper.readValue(new File(translationFileFolder + File.separator + filename), typeRef);
 //                        System.out.println(map);
@@ -85,12 +85,22 @@ public class LangFileMerger {
                 if (entry.getKey().equals(currentKey)) {
                     switch (translationsEnum) {
                         case DE -> translations[i].setDe(entry.getValue());
+                        case ES -> translations[i].setEs(entry.getValue());
+                        case FA -> translations[i].setFa(entry.getValue());
+                        case FI -> translations[i].setFi(entry.getValue());
                         case FR -> translations[i].setFr(entry.getValue());
+                        case HI -> translations[i].setHi(entry.getValue());
+                        case HU -> translations[i].setHu(entry.getValue());
                         case ID -> translations[i].setId(entry.getValue());
                         case IT -> translations[i].setIt(entry.getValue());
                         case JA -> translations[i].setJa(entry.getValue());
                         case KO -> translations[i].setKo(entry.getValue());
+                        case NL -> translations[i].setNl(entry.getValue());
+                        case PL -> translations[i].setPl(entry.getValue());
                         case PT_BR -> translations[i].setPt_BR(entry.getValue());
+                        case RU -> translations[i].setRu(entry.getValue());
+                        case UK -> translations[i].setUk(entry.getValue());
+                        case UR -> translations[i].setUr(entry.getValue());
                         case ZH -> translations[i].setZh(entry.getValue());
                         case ZH_HANS -> translations[i].setZh_HANS(entry.getValue());
                     }

@@ -33,12 +33,22 @@ public class LangFileSplitter {
                 switch (translationsEnum) {
                     case EN -> currentTranslation = translation.getEn();
                     case DE -> currentTranslation = translation.getDe();
+                    case ES -> currentTranslation = translation.getEs();
+                    case FA -> currentTranslation = translation.getFa();
+                    case FI -> currentTranslation = translation.getFi();
                     case FR -> currentTranslation = translation.getFr();
+                    case HI -> currentTranslation = translation.getHi();
+                    case HU -> currentTranslation = translation.getHu();
                     case ID -> currentTranslation = translation.getId();
                     case IT -> currentTranslation = translation.getIt();
                     case JA -> currentTranslation = translation.getJa();
                     case KO -> currentTranslation = translation.getKo();
+                    case NL -> currentTranslation = translation.getNl();
+                    case PL -> currentTranslation = translation.getPl();
                     case PT_BR -> currentTranslation = translation.getPt_BR();
+                    case RU -> currentTranslation = translation.getRu();
+                    case UK -> currentTranslation = translation.getUk();
+                    case UR -> currentTranslation = translation.getUr();
                     case ZH -> currentTranslation = translation.getZh();
                     case ZH_HANS -> currentTranslation = translation.getZh_HANS();
                     default -> currentTranslation = "";
