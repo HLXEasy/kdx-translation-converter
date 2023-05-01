@@ -2,6 +2,7 @@ package org.kaspa.kdx.translationconverter;
 
 public enum TranslationsEnum {
     EN("en"),
+    DA("da"),
     DE("de"),
     ES("es"),
     FA("fa"),

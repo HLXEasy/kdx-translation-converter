@@ -3,6 +3,7 @@ package org.kaspa.kdx.translationconverter;
 public class Translation {
 
     private String en = "";
+    private String da = "";
     private String de = "";
     private String es = "";
     private String fa = "";
@@ -29,6 +30,14 @@ public class Translation {
 
     public void setEn(String en) {
         this.en = en;
+    }
+
+    public String getDa() {
+        return da;
+    }
+
+    public void setDa(String da) {
+        this.da = da;
     }
 
     public String getDe() {
@@ -187,6 +196,7 @@ public class Translation {
     public String toString() {
         return "\nTranslation {" +
             "\n    en=" + en +
+            "\n    da=" + da +
             "\n    de=" + de +
             "\n    es=" + es +
             "\n    fa=" + fa +

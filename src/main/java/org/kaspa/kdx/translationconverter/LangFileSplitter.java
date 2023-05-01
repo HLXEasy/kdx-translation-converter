@@ -32,6 +32,7 @@ public class LangFileSplitter {
                 String currentTranslation;
                 switch (translationsEnum) {
                     case EN -> currentTranslation = translation.getEn();
+                    case DA -> currentTranslation = translation.getDa();
                     case DE -> currentTranslation = translation.getDe();
                     case ES -> currentTranslation = translation.getEs();
                     case FA -> currentTranslation = translation.getFa();

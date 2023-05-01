@@ -84,6 +84,7 @@ public class LangFileMerger {
             for (Map.Entry<String, String> entry : map.entrySet()) {
                 if (entry.getKey().equals(currentKey)) {
                     switch (translationsEnum) {
+                        case DA -> translations[i].setDa(entry.getValue());
                         case DE -> translations[i].setDe(entry.getValue());
                         case ES -> translations[i].setEs(entry.getValue());
                         case FA -> translations[i].setFa(entry.getValue());
