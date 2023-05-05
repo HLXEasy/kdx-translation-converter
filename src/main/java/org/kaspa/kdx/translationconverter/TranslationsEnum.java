@@ -18,6 +18,7 @@ public enum TranslationsEnum {
     PL("pl"),
     PT_BR("pt_BR"),
     RU("ru"),
+    SQ("sq"),
     UK("uk"),
     UR("ur"),
     ZH("zh"),

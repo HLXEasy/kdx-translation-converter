@@ -19,6 +19,7 @@ public class Translation {
     private String pl = "";
     private String pt_BR = "";
     private String ru = "";
+    private String sq = "";
     private String uk = "";
     private String ur = "";
     private String zh = "";
@@ -160,6 +161,14 @@ public class Translation {
         this.ru = ru;
     }
 
+    public String getSq() {
+        return sq;
+    }
+
+    public void setSq(String sq) {
+        this.sq = sq;
+    }
+
     public String getUk() {
         return uk;
     }
@@ -212,6 +221,7 @@ public class Translation {
             "\n    pl=" + pl +
             "\n    pt_BR=" + pt_BR +
             "\n    ru=" + ru +
+            "\n    sq=" + sq +
             "\n    uk=" + uk +
             "\n    ur=" + ur +
             "\n    zh=" + zh +

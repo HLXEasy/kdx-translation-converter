@@ -100,6 +100,7 @@ public class LangFileMerger {
                         case PL -> translations[i].setPl(entry.getValue());
                         case PT_BR -> translations[i].setPt_BR(entry.getValue());
                         case RU -> translations[i].setRu(entry.getValue());
+                        case SQ -> translations[i].setSq(entry.getValue());
                         case UK -> translations[i].setUk(entry.getValue());
                         case UR -> translations[i].setUr(entry.getValue());
                         case ZH -> translations[i].setZh(entry.getValue());

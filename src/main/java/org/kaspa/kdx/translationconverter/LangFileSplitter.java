@@ -48,6 +48,7 @@ public class LangFileSplitter {
                     case PL -> currentTranslation = translation.getPl();
                     case PT_BR -> currentTranslation = translation.getPt_BR();
                     case RU -> currentTranslation = translation.getRu();
+                    case SQ -> currentTranslation = translation.getSq();
                     case UK -> currentTranslation = translation.getUk();
                     case UR -> currentTranslation = translation.getUr();
                     case ZH -> currentTranslation = translation.getZh();
