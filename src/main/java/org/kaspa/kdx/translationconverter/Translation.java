@@ -3,23 +3,31 @@ package org.kaspa.kdx.translationconverter;
 public class Translation {
 
     private String en = "";
+    private String bg = "";
+    private String cs = "";
     private String da = "";
     private String de = "";
+    private String el = "";
     private String es = "";
     private String fa = "";
     private String fi = "";
     private String fr = "";
     private String hi = "";
+    private String hr = "";
     private String hu = "";
     private String id = "";
     private String it = "";
     private String ja = "";
     private String ko = "";
     private String nl = "";
+    private String no = "";
     private String pl = "";
     private String pt_BR = "";
     private String ru = "";
     private String sq = "";
+    private String sr = "";
+    private String sv = "";
+    private String tr = "";
     private String uk = "";
     private String ur = "";
     private String zh = "";
@@ -31,6 +39,22 @@ public class Translation {
 
     public void setEn(String en) {
         this.en = en;
+    }
+
+    public String getBg() {
+        return bg;
+    }
+
+    public void setBg(String bg) {
+        this.bg = bg;
+    }
+
+    public String getCs() {
+        return cs;
+    }
+
+    public void setCs(String cs) {
+        this.cs = cs;
     }
 
     public String getDa() {
@@ -47,6 +71,14 @@ public class Translation {
 
     public void setDe(String de) {
         this.de = de;
+    }
+
+    public String getEl() {
+        return el;
+    }
+
+    public void setEl(String el) {
+        this.el = el;
     }
 
     public String getEs() {
@@ -87,6 +119,14 @@ public class Translation {
 
     public void setHi(String hi) {
         this.hi = hi;
+    }
+
+    public String getHr() {
+        return hr;
+    }
+
+    public void setHr(String hr) {
+        this.hr = hr;
     }
 
     public String getHu() {
@@ -137,6 +177,14 @@ public class Translation {
         this.nl = nl;
     }
 
+    public String getNo() {
+        return no;
+    }
+
+    public void setNo(String no) {
+        this.no = no;
+    }
+
     public String getPl() {
         return pl;
     }
@@ -167,6 +215,30 @@ public class Translation {
 
     public void setSq(String sq) {
         this.sq = sq;
+    }
+
+    public String getSr() {
+        return sr;
+    }
+
+    public void setSr(String sr) {
+        this.sr = sr;
+    }
+
+    public String getSv() {
+        return sv;
+    }
+
+    public void setSv(String sv) {
+        this.sv = sv;
+    }
+
+    public String getTr() {
+        return tr;
+    }
+
+    public void setTr(String tr) {
+        this.tr = tr;
     }
 
     public String getUk() {
@@ -205,23 +277,31 @@ public class Translation {
     public String toString() {
         return "\nTranslation {" +
             "\n    en=" + en +
+            "\n    bg=" + bg +
+            "\n    cs=" + cs +
             "\n    da=" + da +
             "\n    de=" + de +
+            "\n    el=" + el +
             "\n    es=" + es +
             "\n    fa=" + fa +
             "\n    fi=" + fi +
             "\n    fr=" + fr +
             "\n    hi=" + hi +
+            "\n    hr=" + hr +
             "\n    hu=" + hu +
             "\n    id=" + id +
             "\n    it=" + it +
             "\n    ja=" + ja +
             "\n    ko=" + ko +
             "\n    nl=" + nl +
+            "\n    no=" + no +
             "\n    pl=" + pl +
             "\n    pt_BR=" + pt_BR +
             "\n    ru=" + ru +
             "\n    sq=" + sq +
+            "\n    sr=" + sr +
+            "\n    sv=" + sv +
+            "\n    tr=" + tr +
             "\n    uk=" + uk +
             "\n    ur=" + ur +
             "\n    zh=" + zh +

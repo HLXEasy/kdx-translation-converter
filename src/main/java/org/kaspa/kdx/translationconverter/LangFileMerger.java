@@ -84,23 +84,31 @@ public class LangFileMerger {
             for (Map.Entry<String, String> entry : map.entrySet()) {
                 if (entry.getKey().equals(currentKey)) {
                     switch (translationsEnum) {
+                        case BG -> translations[i].setBg(entry.getValue());
+                        case CS -> translations[i].setCs(entry.getValue());
                         case DA -> translations[i].setDa(entry.getValue());
                         case DE -> translations[i].setDe(entry.getValue());
+                        case EL -> translations[i].setEl(entry.getValue());
                         case ES -> translations[i].setEs(entry.getValue());
                         case FA -> translations[i].setFa(entry.getValue());
                         case FI -> translations[i].setFi(entry.getValue());
                         case FR -> translations[i].setFr(entry.getValue());
                         case HI -> translations[i].setHi(entry.getValue());
+                        case HR -> translations[i].setHr(entry.getValue());
                         case HU -> translations[i].setHu(entry.getValue());
                         case ID -> translations[i].setId(entry.getValue());
                         case IT -> translations[i].setIt(entry.getValue());
                         case JA -> translations[i].setJa(entry.getValue());
                         case KO -> translations[i].setKo(entry.getValue());
                         case NL -> translations[i].setNl(entry.getValue());
+                        case NO -> translations[i].setNo(entry.getValue());
                         case PL -> translations[i].setPl(entry.getValue());
                         case PT_BR -> translations[i].setPt_BR(entry.getValue());
                         case RU -> translations[i].setRu(entry.getValue());
                         case SQ -> translations[i].setSq(entry.getValue());
+                        case SR -> translations[i].setSr(entry.getValue());
+                        case SV -> translations[i].setSv(entry.getValue());
+                        case TR -> translations[i].setTr(entry.getValue());
                         case UK -> translations[i].setUk(entry.getValue());
                         case UR -> translations[i].setUr(entry.getValue());
                         case ZH -> translations[i].setZh(entry.getValue());
