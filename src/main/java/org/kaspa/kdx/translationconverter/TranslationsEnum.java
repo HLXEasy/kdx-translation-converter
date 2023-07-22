@@ -22,6 +22,7 @@ public enum TranslationsEnum {
     NO("no"),
     PL("pl"),
     PT_BR("pt_BR"),
+    RO("ro"),
     RU("ru"),
     SQ("sq"),
     SR("sr"),

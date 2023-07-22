@@ -23,6 +23,7 @@ public class Translation {
     private String no = "";
     private String pl = "";
     private String pt_BR = "";
+    private String ro = "";
     private String ru = "";
     private String sq = "";
     private String sr = "";
@@ -199,6 +200,14 @@ public class Translation {
 
     public void setPt_BR(String pt_BR) {
         this.pt_BR = pt_BR;
+    }
+
+    public String getRo() {
+        return ro;
+    }
+
+    public void setRo(String ro) {
+        this.ro = ro;
     }
 
     public String getRu() {
