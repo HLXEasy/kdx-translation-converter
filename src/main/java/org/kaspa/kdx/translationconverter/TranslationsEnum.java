@@ -17,6 +17,7 @@ public enum TranslationsEnum {
     ID("id"),
     IT("it"),
     JA("ja"),
+    KA("ka"),
     KO("ko"),
     NL("nl"),
     NO("no"),
@@ -30,6 +31,7 @@ public enum TranslationsEnum {
     TR("tr"),
     UK("uk"),
     UR("ur"),
+    VI("vi"),
     ZH("zh"),
     ZH_HANS("zh_HANS"),
     ;

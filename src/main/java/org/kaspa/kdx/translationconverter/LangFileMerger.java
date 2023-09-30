@@ -99,6 +99,7 @@ public class LangFileMerger {
                         case ID -> translations[i].setId(entry.getValue());
                         case IT -> translations[i].setIt(entry.getValue());
                         case JA -> translations[i].setJa(entry.getValue());
+                        case KA -> translations[i].setKa(entry.getValue());
                         case KO -> translations[i].setKo(entry.getValue());
                         case NL -> translations[i].setNl(entry.getValue());
                         case NO -> translations[i].setNo(entry.getValue());
@@ -112,6 +113,7 @@ public class LangFileMerger {
                         case TR -> translations[i].setTr(entry.getValue());
                         case UK -> translations[i].setUk(entry.getValue());
                         case UR -> translations[i].setUr(entry.getValue());
+                        case VI -> translations[i].setVi(entry.getValue());
                         case ZH -> translations[i].setZh(entry.getValue());
                         case ZH_HANS -> translations[i].setZh_HANS(entry.getValue());
                     }

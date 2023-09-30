@@ -47,6 +47,7 @@ public class LangFileSplitter {
                     case ID -> currentTranslation = translation.getId();
                     case IT -> currentTranslation = translation.getIt();
                     case JA -> currentTranslation = translation.getJa();
+                    case KA -> currentTranslation = translation.getKa();
                     case KO -> currentTranslation = translation.getKo();
                     case NL -> currentTranslation = translation.getNl();
                     case NO -> currentTranslation = translation.getNo();
@@ -60,6 +61,7 @@ public class LangFileSplitter {
                     case TR -> currentTranslation = translation.getTr();
                     case UK -> currentTranslation = translation.getUk();
                     case UR -> currentTranslation = translation.getUr();
+                    case VI -> currentTranslation = translation.getVi();
                     case ZH -> currentTranslation = translation.getZh();
                     case ZH_HANS -> currentTranslation = translation.getZh_HANS();
                     default -> currentTranslation = "";

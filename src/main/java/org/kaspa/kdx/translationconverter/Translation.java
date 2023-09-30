@@ -18,6 +18,7 @@ public class Translation {
     private String id = "";
     private String it = "";
     private String ja = "";
+    private String ka = "";
     private String ko = "";
     private String nl = "";
     private String no = "";
@@ -31,6 +32,7 @@ public class Translation {
     private String tr = "";
     private String uk = "";
     private String ur = "";
+    private String vi = "";
     private String zh = "";
     private String zh_HANS = "";
 
@@ -162,6 +164,14 @@ public class Translation {
         this.ja = ja;
     }
 
+    public String getKa() {
+        return ka;
+    }
+
+    public void setKa(String ka) {
+        this.ka = ka;
+    }
+
     public String getKo() {
         return ko;
     }
@@ -264,6 +274,14 @@ public class Translation {
 
     public void setUr(String ur) {
         this.ur = ur;
+    }
+
+    public String getVi() {
+        return vi;
+    }
+
+    public void setVi(String vi) {
+        this.vi = vi;
     }
 
     public String getZh() {
