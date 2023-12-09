@@ -1,5 +1,8 @@
 package org.kaspa.kdx.translationconverter;
 
+/**
+ * An enumeration representing different translations.
+ */
 public enum TranslationsEnum {
     EN("en"),
     BG("bg"),

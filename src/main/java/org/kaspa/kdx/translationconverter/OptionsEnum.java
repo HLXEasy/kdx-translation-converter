@@ -1,5 +1,8 @@
 package org.kaspa.kdx.translationconverter;
 
+/**
+ * Enum defining options for the application.
+ */
 public enum OptionsEnum {
     TRANSLATION_FILE_FOLDER("folder", "/tmp/kdx"),
     SPLIT_FILES("split", ""),

@@ -1,6 +1,11 @@
 package org.kaspa.kdx.translationconverter;
 
 public class Help {
+
+    /**
+     * Displays the help information for the KDX language file converter.
+     * This method prints out the usage options and instructions for using the tool.
+     */
     public static void showHelp() {
         System.out.println("""
 

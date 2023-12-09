@@ -8,6 +8,10 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
 
+/**
+ * The LangFileSplitter class is responsible for splitting the language file into multiple translation files.
+ * It uses the Jackson library to parse the language file and serialize the translations into separate JSON files.
+ */
 public class LangFileSplitter {
     private static final String KDX_LANGUAGE_FILE = "i18n.data";
     private final String translationFileFolder;

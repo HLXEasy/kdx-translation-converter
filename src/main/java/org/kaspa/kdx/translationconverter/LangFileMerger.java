@@ -10,6 +10,9 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * The LangFileMerger class is responsible for merging language files into a master language file.
+ */
 public class LangFileMerger {
 
     private static final String KDX_LANGUAGE_FILE = "i18n.data";
@@ -22,6 +25,11 @@ public class LangFileMerger {
         this.translationFileFolder = translationFileFolder;
     }
 
+    /**
+     * Merges language files into a master language file.
+     *
+     * @throws IOException if an I/O error occurs while reading or writing the files
+     */
     public void doMerge() throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
 //        objectMapper.configure(DeserializationFeature.UNWRAP_ROOT_VALUE, true);
@@ -76,6 +84,12 @@ public class LangFileMerger {
         objectMapper.writeValue(new File(translationFileFolder + File.separator + KDX_LANGUAGE_FILE), translations);
     }
 
+    /**
+     * Adds a translation to the given map based on the specified TranslationsEnum value.
+     *
+     * @param map                the map in which the translations will be added
+     * @param translationsEnum   the TranslationsEnum value representing the translation language
+     */
     private void addTranslation(HashMap<String, String> map, TranslationsEnum translationsEnum) {
         System.out.println("Adding translation " + translationsEnum);
         int i;
@@ -122,6 +136,11 @@ public class LangFileMerger {
         }
     }
 
+    /**
+     * Adds a translation entry to the translations array.
+     *
+     * @param x the translation entry to be added
+     */
     private void addTranslationEntry(Translation x) {
         int i;
 

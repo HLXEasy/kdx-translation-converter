@@ -1,5 +1,13 @@
 package org.kaspa.kdx.translationconverter;
 
+/**
+ * The Translation class represents a collection of translations for various languages.
+ * Each language is represented by a private instance variable of type String.
+ * This class provides getters and setters for each language, allowing access and
+ * modification of the translation strings.
+ *
+ * @see LangFileMerger
+ */
 public class Translation {
 
     private String en = "";

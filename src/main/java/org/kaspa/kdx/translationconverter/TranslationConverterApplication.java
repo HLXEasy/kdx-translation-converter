@@ -30,6 +30,12 @@ public class TranslationConverterApplication implements ApplicationRunner {
     @Value("help")
     private String help;
 
+    /**
+     * The main method for starting the converter application.
+     * It initializes the logging, starts the Spring application, and logs when the converter finishes.
+     *
+     * @param args The command-line arguments passed to the program.
+     */
     public static void main(String[] args) {
         LOG.info("Starting converter");
         SpringApplication.run(TranslationConverterApplication.class, args);
@@ -37,6 +43,12 @@ public class TranslationConverterApplication implements ApplicationRunner {
     }
 
 
+    /**
+     * Runs the application with the given command-line arguments.
+     *
+     * @param args The command-line arguments passed to the program.
+     * @throws Exception If an exception occurs while running the application.
+     */
     @Override
     public void run(ApplicationArguments args) throws Exception {
         LOG.info("Application started with command-line arguments: {}", Arrays.toString(args.getSourceArgs()));
